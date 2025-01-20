@@ -1,2 +1,13 @@
-<list-upload></list-upload>
-<button (click)="test()">TESTEEEEE</button>
+<div class="container">
+    <div class="row">
+        <div class="col-12 ms-3 mb-5 pt-2">
+            <button class="btn btn-primary" (click)="openBottom()">
+                Seleção única
+            </button>            
+        </div>
+        <div class="col-12">
+            <list-upload [elements]="elements" (clicked)="touch($event)"></list-upload>
+            <single-upload [item]="item" [height]="'15%'" #web></single-upload>
+        </div>
+    </div>
+</div>

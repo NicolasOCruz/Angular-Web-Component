@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Formatos</th>
+                <th>Envio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of elements">
+                <td>{{ item.type }}</td>
+                <td>{{ item.formats }}</td>
+                <button class="btn btn-primary" (click)="openBottomSheet()">
+                    <i class="bi bi-cloud-upload"></i>
+                </button>
+                <app-singe #bottomSheet [item]="item" [height]="'20%'"></app-singe>
+            </tr>
+        </tbody>
+    </table>
+</div>
