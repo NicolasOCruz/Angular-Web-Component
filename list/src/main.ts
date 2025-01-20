@@ -1,7 +1,7 @@
 import {createApplication} from '@angular/platform-browser';
 import {createCustomElement} from "@angular/elements";
 import { ListComponent } from './app/shared/list/list.component';
-import { SingeComponent } from './app/shared/singe/singe.component';
+import { SingleComponent } from './app/shared/single/single.component';
 import 'zone.js';
 
 (async () => {
@@ -13,7 +13,7 @@ import 'zone.js';
         injector: app.injector,
     });
 
-    const singeElement = createCustomElement(SingeComponent, {
+    const singeElement = createCustomElement(SingleComponent, {
         injector: app.injector,
     })
 

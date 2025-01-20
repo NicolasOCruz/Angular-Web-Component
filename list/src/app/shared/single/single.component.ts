@@ -4,10 +4,10 @@ import { Component, ElementRef, Input, Renderer2, ViewEncapsulation } from '@ang
   selector: 'app-singe',
   standalone: true,
   imports: [],
-  templateUrl: './singe.component.html',
-  styleUrl: './singe.component.scss',
+  templateUrl: './single.component.html',
+  styleUrl: './single.component.scss',
 })
-export class SingeComponent {
+export class SingleComponent {
 
   @Input("item") item: any = {};
   @Input("height") height: string = '50%';

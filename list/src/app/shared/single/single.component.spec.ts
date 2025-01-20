@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SingeComponent } from './singe.component';
+import { SingleComponent } from './single.component';
 
-describe('SingeComponent', () => {
-  let component: SingeComponent;
-  let fixture: ComponentFixture<SingeComponent>;
+describe('SingleComponent', () => {
+  let component: SingleComponent;
+  let fixture: ComponentFixture<SingleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SingeComponent]
+      imports: [SingleComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SingeComponent);
+    fixture = TestBed.createComponent(SingleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
